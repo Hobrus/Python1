@@ -4,3 +4,25 @@
 # Вводится число N, далее еще N − 1 чисел: номера оставшихся карточек (различные числа от 1 до N).
 # Программа должна вывести номер потерянной карточки.
 
+def swap(a, b):
+    return b, a
+x = 0
+y = int(input("Введите любое число от 1 до 12: "))
+n = [1, 6, 3, 8, 2, 10, 12, 5, 4, 13, 9, 7, 11]
+q = 0
+
+temp_i = 0
+for q in range(len(n)):
+    if n[q] == y:
+        temp_i = q
+n.pop(temp_i)
+
+for i in range(len(n) - 1):
+    for j in range(i+1, len(n)):
+        if n[i] > n[j]:
+            n[i], n[j] = swap(n[i], n[j])
+
+for l in range(len(n) - 1):
+    if n[l+1] - n[l] > 1:
+        x = n[l]+1
+print("Ваше число: ", x)
