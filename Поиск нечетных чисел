@@ -1,0 +1,8 @@
+import re
+def div2(x):
+    return bool(re.search("\d*[13579]$", x))
+
+
+x = str(input("Ведите любое число: "))
+print("Число не четное: ", div2(x))
+
