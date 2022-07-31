@@ -17,11 +17,15 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+total_count = int(input('Введите количество денег'))
+price = int(input('Введите стоимость'))
+final_count = total_count - price
 
----
+if total_count >= price:
+    print(final_count)
+
+elif total_count < price:
+    print('Денег недостаточно')
 
 ### Данные для самопроверки
 
