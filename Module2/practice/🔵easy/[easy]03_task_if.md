@@ -15,7 +15,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+side_a = int(input())
+sede_b = int(input())
+side_c = int(input())
+summ_ab = side_a+sede_b
+
+if summ_ab > side_c:
+    print("Существует")
+else:
+    print("Не существует")
 ```
 
 ---
