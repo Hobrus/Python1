@@ -18,7 +18,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+total_count = 56
+prise = int(input())
+result = total_count - prise
+if result >= 0:
+    print(result)
+else:
+    print("Денег недостаточно")
 ```
 
 ---
