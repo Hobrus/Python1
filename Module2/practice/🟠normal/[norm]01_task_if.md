@@ -15,7 +15,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input())
+
+if  100 <= a <= 999:
+    print('3 digit')
+else:
+    print('no 3 digit')
 ```
 
 ---
