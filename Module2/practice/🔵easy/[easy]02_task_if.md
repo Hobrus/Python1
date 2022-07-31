@@ -18,7 +18,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+money = int(input())
+price = int(input())
+
+if money >= price:
+    print(money%price)
+else:
+    print("Денег недостаточно")
 ```
 
 ---
