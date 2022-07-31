@@ -17,10 +17,12 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+x = int(input())
+y = int(input())
 
+if x >= y: print(x-y)
+else:
+    print('денег не достаточно')
 ---
 
 ### Данные для самопроверки
