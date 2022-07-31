@@ -18,8 +18,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
-```
+cash = int(input())
+price = int(input())
+
+if cash-price > 0:
+    print(cash-price)
+else:
+    print('No money...')
 
 ---
 
