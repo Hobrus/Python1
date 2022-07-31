@@ -15,7 +15,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = str(input())
+if int(a[-1])==5:
+    print('Ok')
+else:
+    print('No')
+
 ```
 
 ---
