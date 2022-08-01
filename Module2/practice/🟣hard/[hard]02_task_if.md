@@ -14,8 +14,22 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+sx = int(input('Insert x for Bishop piece:'))
+sy = int(input('Insert y for Bishop piece:'))
+x = int(input('Insert x for Other piece:'))
+y = int(input('Insert y for Other piece:'))
 
+i = 0
+yesCount = 0
+
+while (1<= sx + i <=8 and 1<= sy + i <=8) or (1<= sx - i <=8 and 1<= sy + i <=8) or (1<= sx + i <=8 and 1<= sy - i <=8) or (1<= sx - i <=8 and 1<= sy - i <=8):
+    if (sx + i == x and sy + i == y) or (sx - i == x and sy + i == y) or (sx + i == x and sy - i == y) or (sx - i == x and sy - i == y):
+        yesCount+= 1
+    
+    i+= 1   
+  
+if yesCount > 0:
+    print('Yes')
+else:
+    print('No')    
 ---
