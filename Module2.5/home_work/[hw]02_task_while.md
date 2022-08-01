@@ -17,9 +17,11 @@
 
 ### Решение задачи
 
-```python
 a = int(input("a: "))
 b = int(input("b: "))
 
-# TODO: you code here...
-```
+if a > b: # Если a > b, то выводим все числа из диапазона [b, a]
+    while b <= a:
+        if b % 5 == 0:
+            print(b)
+        b += 1
