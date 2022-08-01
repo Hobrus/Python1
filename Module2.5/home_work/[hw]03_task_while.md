@@ -27,9 +27,21 @@ n = 5
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+n = int(input("n: "))
+i = 1
+
+while i <= n:
+    j = 1
+    while j <= n:
+        if j < n:
+            if i * j // 10 > 0: # Думаю можно выровнять иначе, но не нашла как
+                print(i * j, end=' ')
+            else:
+                print(i * j, end='  ')
+        else:
+            print(i * j)
+        j += 1
+    i += 1
 
 ---
 
