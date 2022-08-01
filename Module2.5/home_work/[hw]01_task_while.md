@@ -35,7 +35,17 @@ n = 12
 ```
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+cost = float(input('cost: '))
+n = int(input('count: '))
+i = 1
+while i <= n:
+    if 11 <= (cost * i) % 100 <= 19:
+        print(str(i) + ' ' + str(round(cost * i, 2)) + ' рублей')
+    elif (cost * i) % 10 == 1:
+        print(str(i) + ' ' + str(round(cost * i, 2)) + ' рубль')
+    elif 2 <= (cost * i) % 10 <= 4 :
+        print(str(i) + ' ' + str(round(cost * i, 2)) + ' рубля')
+    else:
+        print(str(i) + ' ' + str(round(cost * i, 2)) + ' рублей')
+    i += 1
 
