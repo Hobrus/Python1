@@ -7,4 +7,13 @@
 # коров, корова или коровы
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
-# TODO: your code here
+cowCount = int(input())
+
+if 11 <= cowCount % 100 <= 19:
+    print(str(cowCount) + ' korov')
+elif cowCount % 10 == 1:
+    print(str(cowCount) + ' korova')  
+elif 2 <= cowCount % 10 <= 4 :
+    print(str(cowCount) + ' korovy')      
+else:
+    print(str(cowCount) + ' korov')      
