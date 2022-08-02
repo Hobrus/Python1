@@ -33,7 +33,14 @@ n = 12
 11 109.89 рублей
 12 119.88 рублей
 ```
-### Решение задачи
+n = int(input("n: "))
+cost = 9.99
+
+count = 1
+while count < n:
+  print(count * cost, "рублей")
+  count += 1
+
 
 ```python
 # TODO: you code here...
