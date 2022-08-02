@@ -18,8 +18,18 @@
 ### Решение задачи
 
 ```python
+
+
 a = int(input("a: "))
 b = int(input("b: "))
 
-# TODO: you code here...
+
+
+if b < a:
+    a, b = b, a
+
+while a <= b:
+    if a % 5 == 0: # Если число кратно пяти
+        print(a)  # то выводим его
+    a += 1
 ```
