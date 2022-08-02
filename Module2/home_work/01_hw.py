@@ -6,3 +6,23 @@
 # Выведите «YES», если можно отломить от шоколадки ровно k долек, и «NO» иначе.
 
 # TODO: your code here
+n = int(input('n= '))
+m = int(input('m= '))
+k = int(input('k= '))
+i = 1
+j = 1
+result = bool(False)
+while i < n:
+    if i * m == k:
+        result = True
+        break
+    i += 1
+while j < m:
+    if j * n == k:
+        result = True
+        break
+    j += 1
+if result:
+    print('Yes')
+else:
+    print('No')
