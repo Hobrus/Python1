@@ -29,6 +29,21 @@ n = 5
 
 ```python
 # TODO: you code here...
+n = int(input('n = '))
+
+i = 1
+while i <= n:
+    j = 1
+    while j <= n:
+        res = i*j
+        if res < 10:
+            space = " "
+        else:
+            space = ""
+        print(space, res, end=" ")
+        j += 1
+    print()
+    i += 1
 ```
 
 ---
