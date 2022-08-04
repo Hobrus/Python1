@@ -20,5 +20,10 @@
 ```python
 # TODO: you code here...
 ```
+n = int(input())
 
+if (n - (n % 1000)) / 1000 == n % 10 and ((n % 1000) - (n % 100)) / 100 == ((n % 100) - (n % 10)) / 10:
+    print("Да")
+else:
+    print("Нет")
 ---
