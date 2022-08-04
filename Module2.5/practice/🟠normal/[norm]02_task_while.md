@@ -18,7 +18,14 @@
 ```python
 # TODO: you code here...
 ```
+needed_value = "5"
+input_value = ""
 
+summ_pos = 0
+while needed_value != input_value:
+    input_value = input()
+    summ_pos += int(input_value)
+print(summ_pos-int(needed_value))
 ---
 
 ### Подсказки
