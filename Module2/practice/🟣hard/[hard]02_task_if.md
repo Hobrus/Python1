@@ -15,7 +15,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+x1=int(input())
+y1=int(input())
+x2=int(input())
+y2=int(input())
+
+if x2 != x1 and y2 != y1:
+  if  abs(y2-y1)==abs(x2-x1):
+    print('Yes')
+  else:
+    print('No')
 ```
 
 ---
