@@ -16,9 +16,27 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+m = int(input('m: '))
+
+n = 1
+while n < m:
+    i = 1
+    n_div_sum = 0
+    while i < n:
+        if n % i == 0:
+            n_div_sum += i
+        i += 1
+
+    j = 1
+    n_div_sum_div_sum = 0
+    while j < n_div_sum:
+        if n_div_sum % j == 0:
+            n_div_sum_div_sum += j
+        j += 1
+    if n != n_div_sum and n == n_div_sum_div_sum and n_div_sum <= m and n <= n_div_sum:
+        print(n, n_div_sum)
+    n += 1
+
 
 ---
 
