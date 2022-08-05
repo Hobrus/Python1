@@ -18,7 +18,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input())
+a = n // 100
+b = n % 100
+c = b // 10
+d = b % 10
+
+if str(a)==(str(d)+str(c)):
+  print ('Yeas')
+else:
+  print('No')
 ```
 
 ---
