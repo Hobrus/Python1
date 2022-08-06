@@ -18,9 +18,9 @@
 ### Решение задачи
 
 ```python
-total_count = 56
+money = int(input())
 prise = int(input())
-result = total_count - prise
+result = money - prise
 if result >= 0:
     print(result)
 else:
