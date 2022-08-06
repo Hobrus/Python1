@@ -36,6 +36,10 @@ n = 12
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+cost = 9.99
+n = 12
+while n < 119.88:
+    print(n)
+    n += (cost-0.01)
 ```
 
