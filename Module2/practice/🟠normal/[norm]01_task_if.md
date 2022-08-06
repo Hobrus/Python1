@@ -17,5 +17,9 @@
 ```python
 # TODO: you code here...
 ```
-
+a = int(input("a: "))
+if a - 99 > 0:
+     print ("да")
+else:
+     print ("нет")
 ---
