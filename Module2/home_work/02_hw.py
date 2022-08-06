@@ -8,3 +8,13 @@
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
 # TODO: your code here
+cow = int(input ('Сколько коров пасется на лугу: '))
+
+if cow <= 1:
+    print(cow, 'корова')
+elif cow > 1 and cow <= 4:
+    print(cow, 'коровы')
+elif cow > 4 and cow <= 5:
+    print(cow, 'коров')
+else:
+    print(cow, 'коров')
