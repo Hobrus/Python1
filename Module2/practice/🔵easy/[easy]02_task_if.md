@@ -18,7 +18,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+money = int(input())
+prise = int(input())
+result = money - prise
+if result >= 0:
+    print(result)
+else:
+    print("Денег недостаточно")
 ```
 
 ---
