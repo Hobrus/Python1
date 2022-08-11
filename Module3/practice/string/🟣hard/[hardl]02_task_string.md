@@ -14,9 +14,27 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+s1 = 'Мама мыла раму'
+s1_low = s1.lower()
+s1_set = set(s1_low)
+s1_dict = {s: s1_low.count(s) for s in s1_set}
 
+s2 = 'Мама'
+s2_low = s2.lower()
+s2_set = set(s2_low)
+s2_dict = {s: s2_low.count(s) for s in s2_set}
+
+#print(s1_dict)
+#print(s2_dict)
+no_count = 0
+
+for letter, letter_count in s2_dict.items():
+    if letter not in s1_dict.keys() or s1_dict[letter] < letter_count:
+        no_count +=1
+
+if no_count > 0:
+    print('Нельзя')
+else:
+    print('Можно')
 ---
 
