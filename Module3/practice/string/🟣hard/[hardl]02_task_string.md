@@ -15,7 +15,34 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+s1 = "если бы да кабы во рту выросли грибы?"
+s2 = "ели вы да?"
+s1_list = []
+s2_list = []
+
+for i in s1:
+  s1_list.append(i)
+
+for i in s2:
+  s2_list.append(i)
+
+s1_list_unique = [*(set(s1))]
+
+s2_make_from_s1_unique = []
+for i in s2_list:
+  if i in s1_list_unique and i != ' ':
+    s2_make_from_s1_unique.append(i)
+    s1_list_unique.remove(i)
+
+s2_list_wo_space = []
+for i in s2_list:
+  if i != ' ':
+    s2_list_wo_space.append(i)
+
+if  s2_make_from_s1_unique == s2_list_wo_space:
+  print('может')
+else:
+  print('нет')
 ```
 
 ---
