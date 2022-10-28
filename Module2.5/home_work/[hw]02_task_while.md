@@ -20,6 +20,11 @@
 ```python
 a = int(input("a: "))
 b = int(input("b: "))
-
-# TODO: you code here...
+if a > b: 
+    print("Введите корректные данные")
+else:
+    while a <= b:
+        if a % 5 == 0:
+            print('Число', a, 'кратное 5')
+        a +=1
 ```
