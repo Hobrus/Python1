@@ -7,4 +7,13 @@
 # коров, корова или коровы
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
-# TODO: your code here
+number = int(input('Enter a number: '))
+end_of_sentence = ''
+if number == 1:
+    end_of_sentence = 'корова'
+elif 1 < number <= 4:
+    end_of_sentence = 'коровы'
+else:
+    end_of_sentence = 'коров'
+print("You have entered: ", number)
+print('На лугу пасется', number, end_of_sentence )
