@@ -5,4 +5,11 @@
 # Формат выходных данных
 # Выведите «YES», если можно отломить от шоколадки ровно k долек, и «NO» иначе.
 
-# TODO: your code here
+chocolate_bar_size_by_x = int(input('Enter Chocolate Bar Size By \'X\': '))
+chocolate_bar_size_by_y = int(input('Enter Chocolate Bar Size By \'Y\': '))
+piece_of_chocolate_size = int(input('Enter Piece Of Chocolate Bar: '))
+
+if piece_of_chocolate_size != chocolate_bar_size_by_x * chocolate_bar_size_by_y and (piece_of_chocolate_size == chocolate_bar_size_by_x or piece_of_chocolate_size == chocolate_bar_size_by_y):
+    print('YES')
+else:
+    print('NO')
