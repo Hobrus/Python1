@@ -36,6 +36,10 @@ n = 12
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+cost = 9.99
+quantity_of_products = 1
+while quantity_of_products <=12:
+    print(quantity_of_products, cost * quantity_of_products, 'рублей')
+    quantity_of_products +=1
 ```
 
