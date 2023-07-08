@@ -28,7 +28,14 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = 1
+while n <= 5:
+    g = 1
+    while g <= 5:
+        print('{:>d}'.format(g * n), end='\t')
+        g +=1
+    print(end='\n')
+    n+=1
 ```
 
 ---
